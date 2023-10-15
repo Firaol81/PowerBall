@@ -19,7 +19,7 @@ namespace Powerball_Ticket_Generator.Models
         public string? Location { get; set; }
 
         [Required(ErrorMessage = "Please enter your Powerball numbers.")]
-        [RegularExpression(@"^(\d+\s*)+$", ErrorMessage = "Powerball numbers must be space-separated digits.")]
+        [RegularExpression(@"^\d{8}$", ErrorMessage = "Powerball numbers must be exactly 8 digits.")]
         public string? PowerballNumbers { get; set; }
     }
 }

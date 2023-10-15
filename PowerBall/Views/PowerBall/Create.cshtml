@@ -3,7 +3,6 @@
 @{
     ViewBag.Title = "Create Powerball Ticket";
 }
-
 <h2>Create Powerball Ticket</h2>
 
 <form asp-action="Create" method="post">
@@ -21,18 +20,15 @@
         </div>
         <span asp-validation-for="Gender" class="text-danger"></span>
     </div>
-
     <div class="form-group">
         <label asp-for="Age">Age</label>
         <input asp-for="Age" class="form-control" />
         <span asp-validation-for="Age" class="text-danger"></span>
     </div>
-
     <div class="form-group">
         <label asp-for="Location">Location</label>
         <input asp-for="Location" class="form-control" />
     </div>
-
     <div class="form-group">
         <label asp-for="PowerballNumbers">Powerball Numbers</label>
         <input asp-for="PowerballNumbers" class="form-control" />
