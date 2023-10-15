@@ -1,0 +1,43 @@
+﻿@model Powerball_Ticket_Generator.Models.Lottery
+
+@{
+    ViewBag.Title = "Create Powerball Ticket";
+}
+
+<h2>Create Powerball Ticket</h2>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="FullName">Full Name</label>
+        <input asp-for="FullName" class="form-control" />
+        <span asp-validation-for="FullName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Gender">Gender</label>
+        <div>
+            <input asp-for="Gender" type="radio" value="Male" /> Male
+            <input asp-for="Gender" type="radio" value="Female" /> Female
+        </div>
+        <span asp-validation-for="Gender" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Age">Age</label>
+        <input asp-for="Age" class="form-control" />
+        <span asp-validation-for="Age" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Location">Location</label>
+        <input asp-for="Location" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="PowerballNumbers">Powerball Numbers</label>
+        <input asp-for="PowerballNumbers" class="form-control" />
+        <span asp-validation-for="PowerballNumbers" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

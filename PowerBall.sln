@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerBall", "PowerBall\PowerBall.csproj", "{57F10071-C7D4-48A9-A502-0AA906B4A56D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57F10071-C7D4-48A9-A502-0AA906B4A56D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57F10071-C7D4-48A9-A502-0AA906B4A56D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57F10071-C7D4-48A9-A502-0AA906B4A56D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57F10071-C7D4-48A9-A502-0AA906B4A56D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4042D676-532B-49D5-B189-888837EEDCA8}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,40 @@
+﻿@model List<Powerball_Ticket_Generator.Models.Lottery>
+
+@{
+    ViewBag.Title = "Powerball Ticket List";
+}
+
+<h2>Powerball Ticket List</h2>
+<a asp-controller="PowerBall" asp-action="Create">Add New Powerball Ticket</a>
+
+@if (Model != null && Model.Count > 0)
+{
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Full Name</th>
+                <th>Gender</th>
+                <th>Age</th>
+                <th>Location</th>
+                <th>Powerball Numbers</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var lottery in Model)
+            {
+                <tr>
+                    <td>@lottery.FullName</td>
+                    <td>@lottery.Gender</td>
+                    <td>@lottery.Age</td>
+                    <td>@lottery.Location</td>
+                    <td>@lottery.PowerballNumbers</td>
+                    <td>
+                        <a asp-controller="PowerBall" asp-action="Edit" asp-route-id="@lottery.Id">Edit</a>
+                        <a asp-controller="PowerBall" asp-action="Delete" asp-route-id="@lottery.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
